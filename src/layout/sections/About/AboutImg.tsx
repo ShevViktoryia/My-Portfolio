@@ -5,10 +5,14 @@ export const AboutImg = styled.div`
   max-width: 35%;
   height: auto;
   border-radius: 50%;
-  box-shadow: 0 0 10px ${theme.colors["second-color"]};
-  overflow: hidden;
   transition: 0.5s;
-  flex-grow: 1;
+  border: 7px solid ${theme.colors["second-color"]};
+  padding: 10px;
+
+  img {
+    border-radius: 50%;
+  }
+
   @media ${theme.media.tablet} {
     max-width: 60%;
   }

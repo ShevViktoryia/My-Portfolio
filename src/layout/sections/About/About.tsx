@@ -1,9 +1,6 @@
 import { Container } from "../../../components/Container";
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper.styled";
-import { AboutContent } from "./AboutContent.styled";
-import { AboutTitle } from "./AboutTitle.styled";
-import { AboutSubTitle } from "./AboutSubTitle.styled";
 import { CustomText } from "../../../components/CustomText.styled";
 import { CustomPicture } from "../../../components/CustomPicture";
 
@@ -20,10 +17,12 @@ export const About = () => {
           <AboutContent>
             <FlexWrapper direction="column" justify="space-evenly">
               <AboutTitle>Hi, I'm Victoria</AboutTitle>
-              <AboutSubTitle>Junior Frontend Developer</AboutSubTitle>
+              <AboutSubTitle>Frontend Developer</AboutSubTitle>
               <CustomText>
-                Front-End developer based in Belarus <br /> I’am coding with a
-                clean and beautiful problem solving in mind.
+                Front-End developer with 2+ years of experience based in
+                Belarus.
+                <br /> I’am coding with a clean and beautiful problem solving in
+                mind.
               </CustomText>
             </FlexWrapper>
           </AboutContent>
@@ -42,11 +41,29 @@ const StyledAbout = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 80px auto 50px;
+  margin: 100px auto 50px;
   flex-wrap: wrap;
   gap: 90px;
 
   @media ${theme.media.tablet} {
     justify-content: center;
   }
+`;
+
+const AboutContent = styled.div`
+  width: 50%;
+  flex-grow: 2;
+
+  @media ${theme.media.tablet} {
+    text-align: center;
+  }
+`;
+
+const AboutSubTitle = styled.h1`
+  color: ${theme.colors["second-color"]};
+  margin: 20px 0;
+`;
+
+const AboutTitle = styled.h2`
+  font-size: 1.5rem;
 `;

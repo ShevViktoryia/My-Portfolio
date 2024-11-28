@@ -19,7 +19,7 @@ body {
   background-color: ${theme.colors.primary};
   color: ${theme.colors["static-white"]};
   cursor: default;
-  min-width: 320px;
+  min-width: 360px;
 }
 
 code {
@@ -53,4 +53,25 @@ p{
   font-size: 18px;
 }
 
+h1 {
+  font-size: calc((100vw - 360px) / (1920 - 360) * (60 - 18) + 18px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: calc((100vw - 360px) / (1920 - 360) * (60 - 18) + 18px);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h3{
+  font-size: calc((100vw - 360px) / (1920 - 360) * (60 - 18) + 18px);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 `;

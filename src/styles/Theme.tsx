@@ -1,10 +1,10 @@
 export const theme = {
   colors: {
-    primary: "#100f14",
+    primary: "#0B0114",
     "static-white": "whitesmoke",
-    "second-color": "#865dff",
+    "second-color": "#FF6DCF",
     "paragraf-color": "#ccc",
-    "card-color": "#18171b",
+    "card-color": "#10021F",
   },
   media: {
     tablet: "screen and (max-width: 992px)",

@@ -19,6 +19,7 @@ body {
   background-color: ${theme.colors.primary};
   color: ${theme.colors["static-white"]};
   cursor: default;
+  min-width: 320px;
 }
 
 code {

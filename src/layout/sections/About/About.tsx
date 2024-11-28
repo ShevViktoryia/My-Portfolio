@@ -41,9 +41,9 @@ const StyledAbout = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 100px auto 50px;
   flex-wrap: wrap;
   gap: 90px;
+  margin-top: 50px;
 
   @media ${theme.media.tablet} {
     justify-content: center;

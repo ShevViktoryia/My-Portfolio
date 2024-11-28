@@ -33,7 +33,7 @@ a {
 }
 
 section {
-  padding: 30px 0;
+  padding: 80px 0;
 }
 
 textarea {
@@ -42,6 +42,7 @@ textarea {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 button {

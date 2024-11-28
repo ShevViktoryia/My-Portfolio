@@ -28,7 +28,8 @@ code {
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 section {
@@ -46,6 +47,10 @@ ul {
 button {
   background: none;
   border: none;
+}
+
+p{
+  font-size: 18px;
 }
 
 `;

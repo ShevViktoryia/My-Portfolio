@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { Container } from "../../components/Container";
 import { Logo } from "../../components/Logo";
-import { FlexWrapper } from "../../components/FlexWrapper.styled";
 import { theme } from "../../styles/Theme";
 import { MobileHeader } from "./MobileHeader";
+import { SocialMedia } from "../sections/Contacts/SocialMedia";
 
 const listItems = ["Home", "Skills", "Works", "Contact"];
 
@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <HeaderWrapper>
       <Container>
-        <FlexWrapper justify="space-between" align="center">
+        <HeaderContainer>
           <Logo iconId="logo" />
           <StyledNav>
             <NavList>
@@ -25,7 +25,8 @@ export const Header = () => {
             </NavList>
           </StyledNav>
           <MobileHeader />
-        </FlexWrapper>
+          <SocialMedia />
+        </HeaderContainer>
       </Container>
     </HeaderWrapper>
   );
@@ -35,19 +36,20 @@ const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+`;
+
+const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
-  width: 100%;
-  background-color: ${theme.colors.primary};
-  box-shadow: 0 0 7px 6px rgba(0, 0, 0, 0.5);
+  background-color: ${theme.colors["card-color"]};
 `;
 
 const StyledNav = styled.nav`
-  width: 100%;
   display: flex;
-  justify-content: end;
+  flex-grow: 1;
+  justify-content: center;
 `;
 
 const NavList = styled.ul`

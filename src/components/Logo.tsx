@@ -9,9 +9,9 @@ export const Logo = (props: LogoPropsType) => {
   return (
     <LogoLink href="/">
       <Icon
-        width="60px"
-        height="60px"
-        viewBox="0 0 120 120"
+        width="80px"
+        height="80px"
+        viewBox="0 0 45 45"
         iconId={props.iconId}
       />
     </LogoLink>

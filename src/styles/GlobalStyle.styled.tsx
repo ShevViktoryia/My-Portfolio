@@ -19,7 +19,7 @@ body {
   background-color: ${theme.colors.primary};
   color: ${theme.colors["static-white"]};
   cursor: default;
-  min-width: 320px;
+  min-width: 360px;
 }
 
 code {
@@ -28,11 +28,12 @@ code {
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 section {
-  padding: 30px 0;
+  padding: 80px 0;
 }
 
 textarea {
@@ -41,6 +42,7 @@ textarea {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 button {
@@ -48,4 +50,29 @@ button {
   border: none;
 }
 
+p{
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 3.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h3{
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 `;

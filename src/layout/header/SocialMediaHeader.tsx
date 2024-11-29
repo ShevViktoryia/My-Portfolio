@@ -1,33 +1,33 @@
 import styled from "styled-components";
-import { theme } from "../../../styles/Theme";
-import { Icon } from "../../../components/Icon";
+import { theme } from "../../styles/Theme";
+import { Icon } from "../../components/Icon";
 
-export const SocialMedia = () => {
+export const SocialMediaHeader = () => {
   return (
-    <SocialLinks>
-      <SocialLink href="https://github.com/ShevViktoryia">
+    <SocialLinksHeader>
+      <SocialLinkHeader href="https://github.com/ShevViktoryia">
         <Icon iconId="git-link" width="39" height="38" viewBox="0 0 39 38" />
-      </SocialLink>
-      <SocialLink href="mailto:shevvictoria@gmail.com">
+      </SocialLinkHeader>
+      <SocialLinkHeader href="mailto:shevvictoria@gmail.com">
         <Icon iconId="gmail" width="39" height="38" viewBox="0 0 39 38" />
-      </SocialLink>
-      <SocialLink href="https://www.linkedin.com/in/victoria-shevchenko-191577288/">
+      </SocialLinkHeader>
+      <SocialLinkHeader href="https://www.linkedin.com/in/victoria-shevchenko-191577288/">
         <Icon iconId="linkedin" width="39" height="38" viewBox="0 0 39 38" />
-      </SocialLink>
-    </SocialLinks>
+      </SocialLinkHeader>
+    </SocialLinksHeader>
   );
 };
 
-const SocialLinks = styled.ul`
+const SocialLinksHeader = styled.ul`
   padding-left: 0;
   perspective: 60px;
 
   @media ${theme.media.tablet} {
-    text-align: center;
+    display: none;
   }
 `;
 
-const SocialLink = styled.a`
+const SocialLinkHeader = styled.a`
   margin: 0 20px;
   border-radius: 50%;
   transition: 0.5s;

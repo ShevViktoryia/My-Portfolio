@@ -55,20 +55,20 @@ p{
 }
 
 h1 {
-  font-size: calc((100vw - 360px) / (1920 - 360) * (60 - 18) + 18px);
+  font-size: 3.3rem;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;
 }
 
 h2 {
-  font-size: calc((100vw - 360px) / (1920 - 360) * (60 - 18) + 18px);
+  font-size: 2.8rem;
   font-weight: 600;
   line-height: 1.3;
 }
 
 h3{
-  font-size: calc((100vw - 360px) / (1920 - 360) * (60 - 18) + 18px);
+  font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
   margin-bottom: 20px;

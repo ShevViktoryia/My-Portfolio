@@ -15,7 +15,7 @@ export const Footer = () => {
           justify="center"
           gap="50px"
         >
-          <FlexWrapper wrap="wrap" justify="space-between" gap="30px">
+          <FlexWrapper wrap="wrap" justify="center" gap="30px">
             <Contacts />
             <Form />
           </FlexWrapper>
@@ -30,11 +30,6 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
   padding: 50px 0;
-  @media ${theme.media.tablet} {
-    div {
-      justify-content: center;
-    }
-  }
 `;
 
 const CopyRight = styled.small`

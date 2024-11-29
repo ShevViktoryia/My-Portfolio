@@ -5,19 +5,19 @@ import { ProjectTitle } from "./ProjectTitle.styled";
 import { CustomText } from "../../../components/CustomText.styled";
 import { ProjectLinks } from "./ProjectLinks";
 
-import todoAppWebp from "../../../assets/images/todo-preview.webp";
-import todoAppImg from "../../../assets/images/todo-preview.png";
-import simonWebp from "../../../assets/images/simon-game-preview.webp";
-import simonImg from "../../../assets/images/simon-game-preview.png";
-import bookWebp from "../../../assets/images/bookmark-preview.webp";
-import bookImg from "../../../assets/images/bookmark-preview.png";
+import todoAppWebp from "../../../assets/images/todo.webp";
+import todoAppImg from "../../../assets/images/todo.png";
+import simonWebp from "../../../assets/images/simon.webp";
+import simonImg from "../../../assets/images/simon.png";
+import bookWebp from "../../../assets/images/bookmarks.webp";
+import bookImg from "../../../assets/images/bookmarks.png";
 import { FlexWrapper } from "../../../components/FlexWrapper.styled";
 import { theme } from "../../../styles/Theme";
 
 export const ProjectsList = () => {
   return (
     <StyledProjectsList>
-      <FlexWrapper justify="space-between" gap="30px" wrap="wrap">
+      <FlexWrapper justify="center" gap="80px" wrap="wrap">
         <StyledProjectCard>
           <CustomPicture WebpImg={todoAppWebp} CurImg={todoAppImg} />
           <ProjectTitle>Todo App</ProjectTitle>

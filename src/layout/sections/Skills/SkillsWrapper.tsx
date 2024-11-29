@@ -29,13 +29,13 @@ export const SkillsWrapper = () => {
 const SkillList = styled.ul`
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   grid-auto-columns: 1fr;
   grid-auto-rows: 200px;
+  justify-content: center;
 
   @media ${theme.media.tablet} {
-    div {
-      justify-content: center;
-    }
+    max-height: 1140px;
+    overflow: hidden;
   }
 `;

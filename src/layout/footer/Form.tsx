@@ -21,8 +21,9 @@ export const Form = () => {
 };
 
 const StyledForm = styled.form`
-  max-width: 472px;
+  max-width: 500px;
   width: 100%;
+  flex-grow: 1;
 
   h2 {
     @media ${theme.media.tablet} {
@@ -39,14 +40,17 @@ const Field = styled.input`
   font-weight: 500;
   padding: 19px 16px;
   font-size: 1.2rem;
-  outline: none;
   color: ${theme.colors["static-white"]};
 
   &::placeholder {
     color: ${theme.colors["paragraf-color"]};
   }
 
+  &:focus: {
+    outline: 2px solid ${theme.colors["second-color"]};
+  }
+
   &:focus-visible {
-    outline: ${theme.colors["second-color"]};
+    outline: 2px solid ${theme.colors["second-color"]};
   }
 `;

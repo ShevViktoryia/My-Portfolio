@@ -17,7 +17,8 @@ export const Contacts = () => {
 };
 
 const ContactsSection = styled.div`
-  min-width: 50%;
+  width: fit-content;
+  flex-grow: 1;
 `;
 const ContactsTitle = styled.h2`
   font-size: 5rem;

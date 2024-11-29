@@ -6,7 +6,6 @@ export const StyledProjectCard = styled.div`
   box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
   background: ${theme.colors["card-color"]};
   padding: 30px;
-  flex-grow: 1;
   max-width: 400px;
   display: flex;
   flex-direction: column;

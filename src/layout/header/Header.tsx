@@ -3,7 +3,7 @@ import { Container } from "../../components/Container";
 import { Logo } from "../../components/Logo";
 import { theme } from "../../styles/Theme";
 import { MobileHeader } from "./MobileHeader";
-import { SocialMedia } from "../sections/Contacts/SocialMedia";
+import { SocialMediaHeader } from "./SocialMediaHeader";
 
 const listItems = ["Home", "Skills", "Works", "Contact"];
 
@@ -25,7 +25,7 @@ export const Header = () => {
             </NavList>
           </StyledNav>
           <MobileHeader />
-          <SocialMedia />
+          <SocialMediaHeader />
         </HeaderContainer>
       </Container>
     </HeaderWrapper>
@@ -37,6 +37,7 @@ const HeaderWrapper = styled.header`
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
 `;
 
 const HeaderContainer = styled.div`
@@ -55,6 +56,7 @@ const StyledNav = styled.nav`
 const NavList = styled.ul`
   display: flex;
   justify-content: space-between;
+  gap: 50px;
   width: fit-content;
 
   @media ${theme.media.mobile} {
@@ -65,7 +67,6 @@ const NavList = styled.ul`
 const NavLink = styled.a`
   color: ${theme.colors["static-white"]};
   text-decoration: none;
-  margin-left: 20px;
   transition: 0.8s;
 
   &:hover {

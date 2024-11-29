@@ -34,7 +34,7 @@ const BurgerBtn = styled.button<{ isOpen: boolean }>`
   width: 40px;
   height: 40px;
   top: 20px;
-  right: 10px;
+  right: 35px;
   padding: 5px;
   gap: 10px;
   display: none;
@@ -92,7 +92,7 @@ const NavListMobile = styled.ul<{ isOpen: boolean }>`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 10px;
+      gap: 30px;
       width: 100%;
       backgroung-color: ${theme.colors.primary};
     `}

@@ -9,17 +9,17 @@ export const CustomPicture = (props: picturePropsType) => {
     <picture>
       <source
         width="100%"
-        height={props.height || "260px"}
+        height={props.height || "200px"}
         srcSet={props.WebpImg}
         type="image/webp"
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "fill" }}
       />
       <img
         width="100%"
-        height={props.height || "260px"}
+        height={props.height || "200px"}
         src={props.CurImg}
         alt="todo"
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "fill" }}
       />
     </picture>
   );

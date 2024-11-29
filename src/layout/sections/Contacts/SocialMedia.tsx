@@ -2,18 +2,45 @@ import styled from "styled-components";
 import { theme } from "../../../styles/Theme";
 import { Icon } from "../../../components/Icon";
 
+const links = [
+  {
+    id: "git-link",
+    width: "39",
+    height: "38",
+    viewBox: "0 0 39 38",
+    href: "https://github.com/ShevViktoryia",
+  },
+  {
+    id: "gmail",
+    width: "39",
+    height: "38",
+    viewBox: "0 0 39 38",
+    href: "mailto:shevvictoria@gmail.com",
+  },
+  {
+    id: "linkedin",
+    width: "39",
+    height: "38",
+    viewBox: "0 0 39 38",
+    href: "https://www.linkedin.com/in/victoria-shevchenko-191577288/",
+  },
+];
+
 export const SocialMedia = () => {
   return (
     <SocialLinks>
-      <SocialLink href="https://github.com/ShevViktoryia">
-        <Icon iconId="git-link" width="39" height="38" viewBox="0 0 39 38" />
-      </SocialLink>
-      <SocialLink href="mailto:shevvictoria@gmail.com">
-        <Icon iconId="gmail" width="39" height="38" viewBox="0 0 39 38" />
-      </SocialLink>
-      <SocialLink href="https://www.linkedin.com/in/victoria-shevchenko-191577288/">
-        <Icon iconId="linkedin" width="39" height="38" viewBox="0 0 39 38" />
-      </SocialLink>
+      {links.map((link, ind) => {
+        return (
+          <SocialLink href={link.href} key={link.id}>
+            <Icon
+              iconId={link.id}
+              width={link.width}
+              height={link.height}
+              viewBox={link.viewBox}
+            />
+          </SocialLink>
+        );
+      })}
     </SocialLinks>
   );
 };
